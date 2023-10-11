@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Productos</h1>
+
+<section class="d-flex justify-content-end">
+  <a class="btn btn-success" href="{% url "productos:formulario" %}">
+    Nuevo producto
+  </a>
+</section>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Stock</th>
+      <th>Puntaje</th>
+      {% comment %} <th>Categoría</th> {% endcomment %}
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for producto in productos %}
+    <tr>
+      <td>{{producto.nombre}}</td>
+      <td>{{producto.stock}}</td>
+      <td>{{producto.puntaje}}</td>
+      {% comment %} <td>{{producto.categoria}}</td> {% endcomment %}
+      <td>
+        <a class="btn btn-primary" href="{% url 'productos:detalle' producto.id %}">
+          Ver detalle
+        </a>
+        <a class="btn btn-warning" href="{% url 'productos:editar' producto.id %}">
+          Editar
+        </a>
+        <a class="btn btn-danger" href="{% url 'productos:eliminar' producto.id %}">
+          Eliminar
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

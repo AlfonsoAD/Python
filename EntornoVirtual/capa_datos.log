@@ -1,0 +1,125 @@
+09:29:14 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:31:05 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:31:05 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x00000254CD33DF10; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:31:05 AM : DEBUG [cursor_del_pool.py]:27 BLOQUE WITH
+09:31:05 AM : DEBUG [cursor_del_pool.py]:29 [(4, 'Jesus'), (5, 'Alfonso'), (6, 'Pedro')]
+09:31:05 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:31:05 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x00000254CD33DF10; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:47:14 AM : DEBUG [Persona.py]:46 
+    ID_CLIENTE:7, Nombre: Alfonso
+    Apellido:Andrade, Email:Jesus@gmail.com
+    
+09:29:37 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:29:37 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000001B644EE5F10; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:29:37 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:29:37 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000001B644EE5F10; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:29:54 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:29:55 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000002082BEC1F10; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:29:55 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:29:55 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000002082BEC1F10; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:29:55 AM : DEBUG [PersonaDAO.py]:25 
+    ID_CLIENTE:4, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:29:55 AM : DEBUG [PersonaDAO.py]:25 
+    ID_CLIENTE:5, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:29:55 AM : DEBUG [PersonaDAO.py]:25 
+    ID_CLIENTE:6, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:31:33 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:31:34 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000002875472DF10; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:31:34 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:31:34 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000002875472DF10; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:31:34 AM : DEBUG [PersonaDAO.py]:26 
+    ID_CLIENTE:4, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:31:34 AM : DEBUG [PersonaDAO.py]:26 
+    ID_CLIENTE:5, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:31:34 AM : DEBUG [PersonaDAO.py]:26 
+    ID_CLIENTE:6, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:35:58 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:35:58 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000001FC319EE130; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:35:58 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:35:58 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000001FC319EE130; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:37:06 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:37:06 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x00000179D470E130; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:37:06 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:37:06 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x00000179D470E130; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:37:06 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:37:06 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x00000179D470E130; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:37:06 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:37:06 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x00000179D470E130; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:37:06 AM : DEBUG [PersonaDAO.py]:36 
+    ID_CLIENTE:1, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:37:06 AM : DEBUG [PersonaDAO.py]:36 
+    ID_CLIENTE:4, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:37:06 AM : DEBUG [PersonaDAO.py]:36 
+    ID_CLIENTE:5, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:37:06 AM : DEBUG [PersonaDAO.py]:36 
+    ID_CLIENTE:6, Nombre: [1]
+    Apellido:[2], Email:[3]
+    
+09:40:45 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:40:46 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000001B6C26DA020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:40:46 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:40:46 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000001B6C26DA020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:41:21 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:41:21 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000001B0DDAFA020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:41:21 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:41:21 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000001B0DDAFA020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:41:39 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:41:40 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x00000107D497A020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:41:40 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:41:40 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x00000107D497A020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:44:50 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:44:50 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000001C49444E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:44:50 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:44:50 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000001C49444E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:45:41 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:45:41 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000002433C71E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:45:41 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:45:41 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000002433C71E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:46:14 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:46:14 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000001528E95E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:46:14 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:46:14 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000001528E95E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:46:14 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:46:14 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000001528E95E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:46:14 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:46:14 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000001528E95E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:46:14 AM : DEBUG [PersonaDAO.py]:52 Cliente actualizado
+09:46:14 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:46:14 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000001528E95E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:46:14 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:46:14 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000001528E95E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:47:58 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:47:58 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000001F8190DE020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:47:58 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:47:58 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000001F8190DE020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:48:18 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:48:18 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000002A6CE29E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:48:18 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:48:18 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000002A6CE29E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:48:18 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:48:18 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000002A6CE29E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:48:18 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:48:18 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000002A6CE29E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:48:18 AM : DEBUG [PersonaDAO.py]:52 Cliente actualizado
+09:48:18 AM : DEBUG [cursor_del_pool.py]:10 INICIO DE BLOQUE WITH
+09:48:18 AM : DEBUG [conexion.py]:39 CONEXION OBTENIDA <connection object at 0x000002A6CE29E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>
+09:48:18 AM : DEBUG [cursor_del_pool.py]:17 SE EJECUTA EXIT
+09:48:18 AM : DEBUG [conexion.py]:45 CONEXION REGRESADA <connection object at 0x000002A6CE29E020; dsn: 'user=postgres password=xxx dbname=prueba host=localhost port=5432', closed: 0>

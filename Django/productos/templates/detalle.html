@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block content %}
+
+<article>
+  <div class="m-2">
+    <strong>
+      <h4>Nombre</h4>
+    </strong>
+    <p>{{producto.nombre}}</p>
+  </div>
+  <div class="m-2">
+    <strong>
+      <h4>Stock</h4>
+    </strong>
+    <p>{{producto.puntaje}}</p>
+  </div>
+  <div class="m-2">
+    <strong>
+      <h4>Puntaje</h4>
+    </strong>
+    <p>{{producto.puntaje}}</p>
+  </div>
+  <div class="m-2">
+    <strong>
+      <h4>Categoría</h4>
+    </strong>
+    <p>{{producto.categoria}}</p>
+  </div>
+  <div class="m-2">
+    <strong>
+      <h4>Fecha creación</h4>
+    </strong>
+    <p>{{producto.create_date}}</p>
+  </div>
+</article>
+<a class="btn btn-primary" href="/productos">Regresar</a>
+
+{% endblock %}

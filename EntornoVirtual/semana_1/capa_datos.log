@@ -1,0 +1,8 @@
+09:35:29 AM : ERROR [with.py]:25 no existe la relación «cliente»
+LINE 1: INSERT INTO cliente(id_cliente, nombre) Values('1','Paco')
+                    ^
+
+09:35:55 AM : DEBUG [with.py]:23 Registros insertados: 3
+09:38:46 AM : DEBUG [update.py]:23 Registros Actualizados: 2
+09:41:08 AM : DEBUG [with.py]:24 Registros insertados: 3
+09:43:09 AM : DEBUG [delete.py]:21 Registros Eliminados: 3
