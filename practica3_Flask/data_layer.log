@@ -1,0 +1,1285 @@
+ERROR:flask_migrate:Error: Directory migrations already exists and is not empty
+ERROR:flask_migrate:Error: Directory migrations already exists and is not empty
+ERROR:flask_migrate:Error: Directory migrations already exists and is not empty
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:08:55] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:08:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:14:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:14:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:34:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:34:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /students [GET]
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\OneDrive\Escritorio\11vo Semestre\Python\U2\practica3_Flask\routes\students_view.py", line 12, in get_all_students
+    students = Student.query.all()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+[SQL: SELECT student.id AS student_id, student.first_name AS student_first_name, student.last_name AS student_last_name, student.degree AS student_degree, student.status AS student_status, student.created_at AS student_created_at, student.updated_at AS student_updated_at 
+FROM student]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:36:38] "[35m[1mGET /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:36:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /students [GET]
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\OneDrive\Escritorio\11vo Semestre\Python\U2\practica3_Flask\routes\students_view.py", line 12, in get_all_students
+    students = Student.query.all()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+[SQL: SELECT student.id AS student_id, student.first_name AS student_first_name, student.last_name AS student_last_name, student.degree AS student_degree, student.status AS student_status, student.created_at AS student_created_at, student.updated_at AS student_updated_at 
+FROM student]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:37:03] "[35m[1mGET /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:37:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /students [GET]
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\OneDrive\Escritorio\11vo Semestre\Python\U2\practica3_Flask\routes\students_view.py", line 12, in get_all_students
+    students = Student.query.all()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+[SQL: SELECT student.id AS student_id, student.first_name AS student_first_name, student.last_name AS student_last_name, student.degree AS student_degree, student.status AS student_status, student.created_at AS student_created_at, student.updated_at AS student_updated_at 
+FROM student]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:37:22] "[35m[1mGET /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:37:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:37:24] "[33mGET /students/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:37:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:37:34] "[33mGET /students/ HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /students [GET]
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\OneDrive\Escritorio\11vo Semestre\Python\U2\practica3_Flask\routes\students_view.py", line 12, in get_all_students
+    students = Student.query.all()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+[SQL: SELECT student.id AS student_id, student.first_name AS student_first_name, student.last_name AS student_last_name, student.degree AS student_degree, student.status AS student_status, student.created_at AS student_created_at, student.updated_at AS student_updated_at 
+FROM student]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:37:44] "[35m[1mGET /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:39:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\OneDrive\Escritorio\11vo Semestre\Python\U2\practica3_Flask\routes\students_view.py", line 13, in get_all_students
+    students = Student.query.all()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+[SQL: SELECT student.id AS student_id, student.first_name AS student_first_name, student.last_name AS student_last_name, student.degree AS student_degree, student.status AS student_status, student.created_at AS student_created_at, student.updated_at AS student_updated_at 
+FROM student]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:39:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\OneDrive\Escritorio\11vo Semestre\Python\U2\practica3_Flask\routes\students_view.py", line 13, in get_all_students
+    students = Student.query.all()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+[SQL: SELECT student.id AS student_id, student.first_name AS student_first_name, student.last_name AS student_last_name, student.degree AS student_degree, student.status AS student_status, student.created_at AS student_created_at, student.updated_at AS student_updated_at 
+FROM student]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:40:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\OneDrive\Escritorio\11vo Semestre\Python\U2\practica3_Flask\routes\students_view.py", line 13, in get_all_students
+    students = Student.query.all()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+[SQL: SELECT student.id AS student_id, student.first_name AS student_first_name, student.last_name AS student_last_name, student.degree AS student_degree, student.status AS student_status, student.created_at AS student_created_at, student.updated_at AS student_updated_at 
+FROM student]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:40:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\OneDrive\Escritorio\11vo Semestre\Python\U2\practica3_Flask\routes\students_view.py", line 13, in get_all_students
+    students = Student.query.all()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+[SQL: SELECT student.id AS student_id, student.first_name AS student_first_name, student.last_name AS student_last_name, student.degree AS student_degree, student.status AS student_status, student.created_at AS student_created_at, student.updated_at AS student_updated_at 
+FROM student]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:47:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:47:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /students [GET]
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\OneDrive\Escritorio\11vo Semestre\Python\U2\practica3_Flask\routes\students_view.py", line 13, in get_all_students
+    students = Student.query.all()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\andra\.virtualenvs\practica3_Flask-feLh7nfs\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) no existe la relación «student»
+LINE 2: FROM student
+             ^
+
+[SQL: SELECT student.id AS student_id, student.first_name AS student_first_name, student.last_name AS student_last_name, student.degree AS student_degree, student.status AS student_status, student.created_at AS student_created_at, student.updated_at AS student_updated_at 
+FROM student]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:47:27] "[35m[1mGET /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:47:48] "[35m[1mGET /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:47:48] "GET /students?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:47:48] "GET /students?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 16:47:48] "GET /students?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ERROR:flask_migrate:Error: Directory migrations already exists and is not empty
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:00:36] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:01:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:03:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:04:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:04:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:04:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:05:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:05:45] "[35m[1mGET /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:05:45] "[36mGET /students?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:05:45] "[36mGET /students?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:05:45] "[36mGET /students?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:07:10] "[35m[1mGET /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:07:10] "[36mGET /students?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:07:10] "[36mGET /students?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:07:10] "[36mGET /students?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:07:28] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:08:06] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:08:06] "[36mGET /students?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:08:06] "[36mGET /students?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:08:06] "[36mGET /students?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\forms\\students_form.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:10:24] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:10:24] "[36mGET /students?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:10:24] "[36mGET /students?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:10:24] "[36mGET /students?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:10:27] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:10:49] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:10:49] "[36mGET /students?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:10:49] "[36mGET /students?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:10:49] "[36mGET /students?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:14:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:14:51] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:15:20] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\forms\\students_form.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:15:43] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:15:58] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:16:23] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:16:23] "[36mGET /students?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:16:23] "[36mGET /students?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:16:23] "[36mGET /students?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\forms\\students_form.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:17:28] "[35m[1mGET /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:17:28] "[36mGET /students?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:17:28] "[36mGET /students?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:17:28] "[36mGET /students?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:17:42] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:17:57] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:17:57] "[36mGET /students?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:17:57] "[36mGET /students?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:17:57] "[36mGET /students?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:18:49] "[32mPOST /students HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:18:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:19:03] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:19:14] "[32mPOST /students HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:19:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:19:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:19:51] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:21:52] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:21:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:21:59] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:22:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:22:19] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:22:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:23:08] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:23:19] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:23:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:26:27] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:26:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:26:39] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:26:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:26:40] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:26:40] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:26:40] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:26:40] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:27:51] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:28:11] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:28:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:28:12] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:28:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:21] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:31] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:51] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:52] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:53] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:29:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:30:38] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:30:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:31:27] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:31:37] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:31:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:31:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:31:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:36:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:36:43] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:36:43] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:36:44] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:36:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:36:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:37:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:37:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:37:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:37:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:37:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:38:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:38:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:40:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:40:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:40:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:40:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:40:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:40:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:41:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:41:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:41:22] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:41:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:41:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:41:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:42:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:42:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:43:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:43:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:44:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:44:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:45:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:45:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:46:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:46:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:48:35] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:48:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:50:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:11] "[35m[1mGET /students/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:11] "GET /students/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:11] "GET /students/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:11] "GET /students/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:28] "GET /students/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:33] "GET /students/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:47] "[32mPOST /students/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 17:55:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:05:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:05:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:05:27] "GET /students/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:05:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:05:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:06:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:06:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:06:12] "GET /delete-student/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:06:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:06:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:06:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:06:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:06:41] "GET /delete-student/1 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:09] "[35m[1mGET /delete-student/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:09] "GET /delete-student/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:09] "GET /delete-student/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:09] "GET /delete-student/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:22] "[35m[1mGET /delete-student/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:22] "[36mGET /delete-student/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:22] "GET /delete-student/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:22] "GET /delete-student/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:23] "[35m[1mGET /delete-student/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:23] "[36mGET /delete-student/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:23] "[36mGET /delete-student/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:23] "[36mGET /delete-student/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:26] "[35m[1mGET /delete-student/4 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:26] "GET /delete-student/4?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:26] "GET /delete-student/4?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:26] "GET /delete-student/4?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:36] "GET /delete-student/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:07:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:08:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:08:33] "GET /delete-student/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:08:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:08:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:08:44] "GET /delete-student/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:08:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:08:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:08:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:08:58] "GET /delete-student/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:09:01] "[33mGET /delete-studen/3 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:09:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:09:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:09:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:09:16] "GET /delete-student/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:09:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:09:17] "GET /delete-student/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:09:50] "GET /delete-student/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:10:22] "GET /delete-student/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:10:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:10:24] "[32mPOST /delete-student/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:10:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 18:10:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 21:58:44] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 21:58:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 21:58:58] "[32mPOST /students HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 21:58:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:02:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:02:36] "GET /delete-student/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:02:37] "[32mPOST /delete-student/4 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:02:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\forms\\teachers_form.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:10:03] "[35m[1mGET /teachers HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:10:03] "GET /teachers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:10:03] "GET /teachers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:10:03] "GET /teachers?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:10:51] "[35m[1mGET /teachers HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:10:51] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:10:51] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:10:51] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:11:12] "[33mGET /view-teacher HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:11:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:11:32] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:11:32] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:11:32] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:11:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:11:54] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:11:54] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:11:54] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:12:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:12:31] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:12:49] "[32mPOST /students HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:12:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:13:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:13:12] "GET /students/7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:13:17] "[32mPOST /students/7 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:13:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:14:00] "GET /delete-student/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:14:02] "[32mPOST /delete-student/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:14:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:14:22] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:14:32] "[32mPOST /students HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:14:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:14:36] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:14:40] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:16:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:16:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:16:16] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:16:17] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:16:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:16:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:16:48] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:16:50] "GET /teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:09] "[35m[1mPOST /teachers HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:09] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:09] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:09] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:33] "[35m[1mPOST /teachers HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:33] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:33] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:33] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:54] "[35m[1mGET /view-teachers HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:54] "GET /view-teachers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:54] "GET /view-teachers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:17:54] "GET /view-teachers?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:19:12] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:19:17] "[33mGET /teachers/1 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:19:21] "GET /teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:19:32] "[35m[1mPOST /teachers HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:19:32] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:19:32] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:19:32] "[36mGET /teachers?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:20:01] "GET /teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:20:03] "[32mPOST /teachers HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:20:03] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:20:05] "[33mGET /delete-teacher/3 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:20:09] "GET /teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:20:11] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:23:35] "[35m[1mGET /teachers/3 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:23:35] "GET /teachers/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:23:35] "GET /teachers/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:23:35] "GET /teachers/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\students_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:24:20] "GET /teachers/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:24:29] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:24:31] "GET /teachers/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:24:36] "[32mPOST /teachers/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:24:36] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\teachers_view.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:26:27] "GET /delete-teacher/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:26:29] "[32mPOST /delete-teacher/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:26:29] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:26:41] "GET /teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:06] "[32mPOST /teachers HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:06] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:11] "GET /delete-teacher/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:32] "GET /students/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:35] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:37] "GET /teachers/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:39] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:41] "GET /delete-teacher/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:27:43] "[33mGET /teacher-views HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:28:04] "[33mGET /teacher-views HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:28:08] "[33mGET /teacher-views HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:28:15] "GET /delete-teacher/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:28:18] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:28:20] "GET /teachers/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:28:21] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:28:26] "GET /delete-teacher/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:28:27] "[32mPOST /delete-teacher/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:28:27] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:04] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:05] "GET /teachers/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:06] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:08] "GET /delete-teacher/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:10] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:11] "GET /teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:13] "GET /view-teachers HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:17] "GET /delete-student/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:18] "[32mPOST /delete-student/8 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:21] "GET /delete-student/6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:22] "[32mPOST /delete-student/6 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:29:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:41:26] "GET /students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:41:38] "[35m[1mGET /api/students HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:42:51] "[35m[1mGET /api/students HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:43:22] "[35m[1mGET /api/students HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:45:23] "[35m[1mGET /api/students HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\models\\students.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\models\\teachers.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:46:55] "[35m[1mGET /api/students HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:47:29] "[35m[1mGET /api/students HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:48:02] "GET /api/students HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:49:48] "GET /api/students HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:54:09] "GET /api/students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:54:39] "POST /api/students HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:57:50] "POST /api/students/9 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 22:59:45] "GET /api/students HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 23:00:14] "POST /api/delete-student/9 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\andra\\OneDrive\\Escritorio\\11vo Semestre\\Python\\U2\\practica3_Flask\\routes\\student.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 779-576-636

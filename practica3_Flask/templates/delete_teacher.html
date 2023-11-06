@@ -1,0 +1,12 @@
+{% extends'base.html' %}
+{% block body %}
+<section class="container p-5">
+    <h1>Delete teacher</h1>
+    <form class="form-group" method="POST">
+        <p class="font-weight-bold">You want to delete the teacher {{teacher.first_name}} {{teacher.last_name}}?</p>
+        <a class="btn btn-warning" href="/view-teachers">Cancel</a>    
+        <input type="submit" class="btn btn-danger" href="/delete-teacher/{{teacher.id}}" value="Yes i want"/>
+    </form>
+   
+</section>
+{% endblock %}

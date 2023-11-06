@@ -1,0 +1,12 @@
+{% extends'base.html' %}
+{% block body %}
+<section class="container p-5">
+    <h1>Delete student</h1>
+    <form class="form-group" method="POST">
+        <p class="font-weight-bold">You want to delete the student {{student.first_name}} {{student.last_name}}?</p>
+        <a class="btn btn-warning" href="/">Cancel</a>    
+        <input type="submit" class="btn btn-danger" href="/delete-student/{{student.id}}" value="Yes i want"/>
+    </form>
+   
+</section>
+{% endblock %}

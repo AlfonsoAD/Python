@@ -19,6 +19,7 @@ class CustomFormRenderer(TemplatesSetting):
     form_template_name = 'form_snippets.html'
 
 
+# Para que funcione esto hay que instalar django.forms en installed_apps
 FORM_RENDERER = 'primerProyecto.settings.CustomFormRenderer'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
